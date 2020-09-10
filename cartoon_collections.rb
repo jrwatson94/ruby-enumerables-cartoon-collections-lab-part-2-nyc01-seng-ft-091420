@@ -29,7 +29,10 @@ def find_valid_calls(planeteer_calls)
   planeteer_calls.any? do |element|
       valid_calls.each do |call|
         if element == call
-          
+          element
+        else
+          nil
+        end
       end
   end
 end
